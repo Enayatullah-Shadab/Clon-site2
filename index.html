@@ -10,8 +10,25 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <a href="#" class="badge badge-primary"></a>
 </head>
+<style>
+    body.debug .container,
+    body.debug .container-fluid {
+        outline: 2px double blue;
+        outline-offset: -2px;
+    }
 
-<body>
+    body.debug .row {
+        outline: 2px dashed red;
+        outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"] {
+        outline: 2px dotted forestgreen;
+        outline-offset: -3px;
+    }
+</style>
+
+<body class="debug">
     <section>
         <header class="container-fluid">
             <!-- 3 rows for the header -->
@@ -19,52 +36,160 @@
 
             <div class="row">
                 <div class="col-1 m-3 "><img src=".//images/tracktor.png" height="60" alt="problem on loeading image">
+                    <p> modle# 1</p>
                 </div>
                 <div class="col-1 m-3"><img src=".//images/tracktor.png" height="60" alt="problem on loeading image">
+                    <p> modle# 2</p>
                 </div>
                 <div class="col-1 m-3"><img src=".//images/tracktor.png" height="60" alt="problem on loeading image">
+                    <p> modle# 3</p>
                 </div>
                 <div class="col-1 m-3"><img src=".//images/tracktor.png" height="60" alt="problem on loeading image">
+                    <p> modle# 4</p>
                 </div>
                 <div class="col-1 m-3"><img src=".//images/tracktor.png" height="60" alt="problem on loeading image">
+                    <p> modle# 5</p>
                 </div>
                 <div class="col-1 m-3"><img src=".//images/tracktor.png" height="60" alt="problem on loeading image">
+                    <p> modle# 6</p>
                 </div>
                 <div class="col-1 m-3"><img src=".//images/tracktor.png" height="60" alt="problem on loeading image">
+                    <p> modle# 7</p>
                 </div>
                 <div class="col-1 m-3"><img src=".//images/tracktor.png" height="60" alt="problem on loeading image">
+                    <p> modle# 8</p>
                 </div>
                 <div class="col-1 m-3"><img src=".//images/tracktor.png" height="60" alt="problem on loeading image">
+                    <p> modle# 9</p>
                 </div>
             </div>
-
             <div class="row">
                 <!-- main image -->
+                <!-- Need Fix for text overlap on image -->
                 <img src="https://www.agri-pulse.com/ext/resources/images/Agriculture-photos/Farmscapes/Farm1.jpg?1509734744"
                     height="500" width="1350" alt="">
+                <div class="bg-light rounded shadow p-3 d-none d-md-block">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit obcaecati sequi expedita
+                        veniam autem iure
+                        sunt harum voluptas soluta eaque alias voluptatum, laborum libero distinctio placeat
+                        iusto perspiciatis
+                        eius! </p>
+                </div>
+                <button type="button" class="btn btn-secondary my-5 pill-btn glow"> Watch Now</button>
             </div>
-            <!-- 
-                
-             -->
         </header>
         <main>
             <!-- product selectors -->
-            <div class="row">
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col"></div>
+            <div class="row bg-secondary">
+                <div class="col">
+                    <div class="row">
+                        <div class="col-6"> <img src="./images/tracktor.png" height="60" alt="">
+                        </div>
+                        <div class="col-6">
+                            <p> this is the one</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col-6"> <img src="./images/tracktor.png" height="60" alt="">
+                        </div>
+                        <div class="col-6">
+                            <p> this is the one</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col-6"> <img src="./images/tracktor.png" height="60" alt="">
+                        </div>
+                        <div class="col-6">
+                            <p> this is the one</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col-6"> <img src="./images/tracktor.png" height="60" alt="">
+                        </div>
+                        <div class="col-6">
+                            <p> this is the one</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col-6"> <img src="./images/tracktor.png" height="60" alt="">
+                        </div>
+                        <div class="col-6">
+                            <p> this is the one</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col-6"> <img src="./images/tracktor.png" height="60" alt="">
+                        </div>
+                        <div class="col-6">
+                            <p> this is the one</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <div class="col"></div>
-                <div class="col"></div>
+
+
+            <div class="row badge-primary ">
+                <div class="col">
+                    <div class="row">
+                        <div class="col-6 d-flex justify-content-center text-align"><img src="./images/tracktor.png"
+                                height="300" width="300" alt=""></div>
+                        <div class="col-6">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus adipisci
+                                doloribus libero voluptate.</p>
+                            <button type="button" class="btn btn-secondary"> start saving today</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col-6 d-flex justify-content-center text-align"><img src="./images/tracktor.png"
+                                height="300" width="300" alt=""></div>
+                        <div class="col-6">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus adipisci
+                                doloribus libero voluptate.</p>
+                            <button type="button" class="btn btn-secondary"> buy now</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <div class="col"></div>
-                <div class="col"></div>
+
+            <div class="row badge-secondary">
+                <div class="col">
+                    <div class="row">
+                        <div class="col-6 d-flex justify-content-center text-align"><img src="./images/tracktor.png"
+                                height="300" width="300" alt=""></div>
+                        <div class="col-6">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus adipisci
+                            </p>
+                            <a href="#">Explore smart grad excauator ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col-6 d-flex justify-content-center text-align"><img src="./images/tracktor.png"
+                                height="300" width="300" alt=""></div>
+                        <div class="col-6">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus adipisci
+                                .</p>
+                            <a href="#">Explore our innovative backhoes ></a>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+
+
             <!-- linving john deere -->
             <div class="row">
             </div>
